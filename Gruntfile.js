@@ -50,9 +50,9 @@ module.exports = function (grunt) {
             '  if (typeof module != \'undefined\' && module.exports) module.exports = definition();',
             '  else if (typeof context[\'define\'] == \'function\' && context[\'define\'][\'amd\']) define(definition);',
             '  else context[name] = definition();',
-            '})(\'Firepad\', function () {'
+            '})(\'firepad\', function () {'
           ].join('\n'),
-          footer: "\nreturn firepad.Firepad; }, this);"
+          footer: "\nreturn firepad; }, this);"
         },
         "src": [
           "lib/utils.js",
@@ -61,6 +61,7 @@ module.exports = function (grunt) {
           "lib/text-operation.js",
           "lib/annotation-list.js",
           "lib/cursor.js",
+          "lib/adapter.js",
           "lib/firebase-adapter.js",
           "lib/rich-text-toolbar.js",
           "lib/wrapped-operation.js",
