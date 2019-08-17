@@ -70,6 +70,7 @@
     "test": "grunt test",
     "travis": "grunt",
     "dev": "grunt watch",
-    "build": "grunt build"
+    "build": "grunt build",
+    "prepare": "grunt build"
   }
 }
